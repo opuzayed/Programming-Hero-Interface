@@ -43,3 +43,10 @@
     font-size: 14px;
     color: var(--white);
   }
+  /* main body style start */
+  .main{
+    display: grid;
+    grid-template-columns: 2.3fr 1fr;
+    grid-gap: 20px;
+    padding: 30px;
+  }
