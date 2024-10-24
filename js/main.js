@@ -43,6 +43,21 @@ function openMilestone(milestoneElement) {
   if(!currentPanel.classList.contains('show') && shownPanel)
   shownPanel.classList.remove('show');
   currentPanel.classList.toggle('show');
-  
+  showMilestone();
 }
+function showMilestone(id){
+  const milestoneImege = document.querySelector('.milestoneImage');
+  const name = document.querySelector('.title');
+  const details = document.querySelector('.details');
+
+  milestoneImege.style.opacity = '0';
+  milestoneImege.src = milestonesData[id].image;
+  name.innerText = milestonesData[id].name;
+  details.innerText = milestonesData[id].description;
+}
+const milestoneImage = document.querySelector('.milestoneImage');
+milestoneImage.onload = function(){
+  this.style.opacity = '1';
+}
+
 loadMilestones();
