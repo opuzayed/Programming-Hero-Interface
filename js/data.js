@@ -1,5 +1,6 @@
 const data = 
-`{ "success": true,
+'{
+  "success": true,
   "data": [
     {
       "_id": "0",
@@ -596,4 +597,5 @@ const data =
       ]
     }
   ]
-}`;
+}
+';
